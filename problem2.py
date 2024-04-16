@@ -26,3 +26,14 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+x = int(input("Please enter a number> "))
+y = int(input("Please input another number> "))
+
+z = max( x, y )
+
+if x > y and x % y ==0:
+    print(f"{y} is a factor of {x}")
+elif y > x and y % x == 0:
+    print(f"{x} is a factor of {y}")
+else:
+    print(f"{min(x,y)} is not a factor of {max(x,y)}")
